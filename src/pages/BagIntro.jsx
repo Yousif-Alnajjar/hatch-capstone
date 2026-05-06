@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Asterisk, Burst, HalfMoon, Arc, Dot } from '../components/Decoration.jsx';
+import { Burst, HalfMoon, Arc, Dot } from '../components/Decoration.jsx';
 import bagHero from '../assets/bag-hero.png';
 import './Bag.css';
 
@@ -7,11 +7,11 @@ export default function BagIntro() {
   return (
     <div className="page bag-intro">
       <div className="card bag-card">
-        <HalfMoon color="#bee3e0" size={70} style={{ position: 'absolute', top: -20, left: -16 }} rotate={180} />
-        <HalfMoon color="#0dae52" size={42} rotate={180} style={{ position: 'absolute', top: -2, left: 6, opacity: 0.7 }} />
+        <HalfMoon color="#bee3e0" size={70} rotate={180} style={{ position: 'absolute', top: -22, left: -20, zIndex: 0 }} />
+        <HalfMoon color="#6fcf97" size={42} rotate={180} style={{ position: 'absolute', top: -2, left: 4, zIndex: 1, opacity: 0.95 }} />
 
-        <h1 className="text-center">Shake the bag!</h1>
-        <p className="muted-15 text-center" style={{ margin: '14px 28px 0' }}>
+        <h1 className="bag-card-title text-center">Shake the bag!</h1>
+        <p className="muted-15 text-center bag-card-sub">
           Click on the bag below to learn more about what&rsquo;s inside!
         </p>
 
@@ -19,12 +19,14 @@ export default function BagIntro() {
           <img src={bagHero} alt="Hatch Play Kit bag" className="bag-photo" />
         </Link>
 
-        <Arc color="#f5d51c" size={120} style={{ position: 'absolute', right: -30, bottom: 80, opacity: 0.9 }} />
-        <Burst color="#ffb1a8" size={70} style={{ position: 'absolute', right: 30, bottom: 30 }} />
-        <Dot color="#f5d51c" size={36} style={{ position: 'absolute', right: 40, bottom: -10 }} />
+        <Arc color="#f5d51c" size={120} style={{ position: 'absolute', right: -38, bottom: 70, zIndex: 0 }} />
+        <Dot color="#f5d51c" size={26} style={{ position: 'absolute', right: 28, bottom: 12, zIndex: 1 }} />
       </div>
 
-      <div className="row-center" style={{ marginTop: 28 }}>
+      <Burst color="#ffb1a8" size={70} style={{ position: 'absolute', right: 18, bottom: 80, zIndex: 0 }} />
+      <HalfMoon color="#f5e090" size={130} rotate={210} style={{ position: 'absolute', right: -20, bottom: 0, zIndex: 0 }} />
+
+      <div className="row-center bag-intro-cta">
         <Link to="/" className="btn btn-ghost">return to main</Link>
       </div>
     </div>

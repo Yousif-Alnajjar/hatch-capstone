@@ -4,7 +4,7 @@ import { HalfMoon, Asterisk, Arc, Stripe } from '../components/Decoration.jsx';
 import kitTray from '../assets/kit-tray.png';
 import './Timer.css';
 
-const DURATION = 120; // 2:00
+const DURATION = 120;
 
 function format(s) {
   const m = Math.floor(s / 60);
@@ -43,7 +43,7 @@ export default function Timer() {
       </div>
 
       {!done ? (
-        <h2 className="focus-text">Take a moment to focus here.</h2>
+        <h2 className="focus-text">Take a moment<br />to focus here.</h2>
       ) : (
         <div className="card read-more-inline">
           <h2>Or read more&hellip;</h2>
@@ -55,10 +55,14 @@ export default function Timer() {
         </div>
       )}
 
-      <Arc color="#f5d51c" size={140} style={{ position: 'absolute', right: -30, top: 320, opacity: 0.85 }} />
-      <Asterisk color="#0dae52" size={42} style={{ position: 'absolute', right: 40, top: 380 }} />
-      <HalfMoon color="#ff7138" size={70} rotate={170} style={{ position: 'absolute', bottom: 80, left: -10 }} />
-      <Stripe color="#ffd0b8" width={130} height={18} rotate={-22} style={{ position: 'absolute', bottom: 150, left: 0 }} />
+      <div className="timer-deco-tr" aria-hidden>
+        <Arc color="#f5d51c" size={120} />
+        <Asterisk color="#0dae52" size={36} style={{ position: 'absolute', top: 36, left: 48 }} />
+      </div>
+      <div className="timer-deco-bl" aria-hidden>
+        <HalfMoon color="#ff7138" size={56} rotate={170} />
+        <Stripe color="#ffd0b8" width={110} height={16} rotate={-22} style={{ position: 'absolute', top: 28, left: -10 }} />
+      </div>
     </div>
   );
 }

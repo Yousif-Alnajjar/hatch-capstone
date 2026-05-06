@@ -1,6 +1,7 @@
 :root {
   --color-bg: #ffffff;
   --color-cream: #fbfbf7;
+  --color-cream-dark: #f1efe3;
   --color-ink: #0a0a0a;
   --color-ink-soft: #4c4c4c;
   --color-line: #e6e6df;
@@ -10,11 +11,14 @@
   --color-orange: #ff7138;
   --color-teal: #02b1a5;
   --color-yellow: #f5d51c;
+  --color-yellow-soft: #f5e090;
   --color-purple: #c6b3ff;
   --color-pink: #ef6ca7;
   --color-green: #0dae52;
+  --color-green-light: #6fcf97;
   --color-darkpurple: #8b3b71;
   --color-navy: #284b99;
+  --color-peach: #ffd0b8;
 
   --radius-sm: 12px;
   --radius-md: 20px;
@@ -23,6 +27,7 @@
 
   --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.06);
   --shadow-glow: 0 0 60px rgba(245, 213, 28, 0.55);
+  --shadow-photo: 0 8px 24px rgba(0, 0, 0, 0.12);
 
   --space-1: 4px;
   --space-2: 8px;
@@ -48,7 +53,7 @@ body {
   background: #ece9df;
   color: var(--color-ink);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -62,15 +67,15 @@ img { max-width: 100%; display: block; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
   color: var(--color-ink);
   letter-spacing: -0.02em;
-  line-height: 1.05;
+  line-height: 1.0;
 }
 
 h1 { font-size: 36px; }
-h2 { font-size: 28px; }
+h2 { font-size: 32px; }
 h3 { font-size: 22px; }
 h4 { font-size: 18px; }
 
@@ -102,6 +107,7 @@ p { margin: 0; }
   padding: 16px 22px 80px;
   position: relative;
 }
+.page-pad-tight { padding-bottom: 36px; }
 
 /* Buttons */
 .btn {
@@ -109,12 +115,12 @@ p { margin: 0; }
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 14px 26px;
+  padding: 13px 26px;
   border-radius: var(--radius-pill);
   font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0;
   border: 1px solid transparent;
   background: var(--color-primary);
   color: var(--color-primary-ink);
@@ -126,13 +132,13 @@ p { margin: 0; }
 .btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
 .btn-primary { background: var(--color-primary); color: #fff; }
-.btn-orange { background: var(--color-orange); color: #fff; border-color: rgba(0,0,0,0.08); }
+.btn-orange  { background: var(--color-orange); color: #fff; border-color: rgba(0,0,0,0.08); font-weight: 700; }
 .btn-ghost {
   background: #fff;
   color: var(--color-ink-soft);
   border: 1px solid var(--color-ink-soft);
   font-weight: 500;
-  padding: 10px 22px;
+  padding: 9px 22px;
   font-size: 14px;
 }
 .btn-outline {
@@ -141,9 +147,9 @@ p { margin: 0; }
   border: 1.5px solid var(--color-ink);
   font-weight: 600;
 }
-.btn-sm { padding: 10px 22px; font-size: 14px; }
-.btn-lg { padding: 16px 32px; font-size: 18px; font-weight: 600; }
-.btn-uppercase { text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
+.btn-sm { padding: 9px 22px; font-size: 13px; }
+.btn-lg { padding: 15px 30px; font-size: 16px; font-weight: 700; }
+.btn-uppercase { text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
 
 /* Tag pill */
 .tag {
@@ -168,54 +174,57 @@ p { margin: 0; }
 .tag-Artistic     { background: var(--color-darkpurple); }
 .tag-Invention    { background: var(--color-navy); }
 
-/* Card */
+/* Card — cream block, rounded */
 .card {
   background: var(--color-cream);
   border-radius: var(--radius-lg);
-  padding: 22px 22px 28px;
+  padding: 30px 26px 32px;
   position: relative;
+  overflow: hidden;
+}
+.card-flat { padding: 22px 24px 24px; }
+.card-bleed { overflow: visible; }
+.card > h1, .card > h2, .card > h3, .card > p, .card > .row, .card > .row-center, .card > .col, .card > .btn, .card > a, .card > button, .card > ul {
+  position: relative;
+  z-index: 2;
 }
 
-.card-tight { padding: 16px 20px; }
+/* Yellow dot — accent often placed left of headings */
+.dot-y {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  position: relative;
+  top: -3px;
+}
 
-/* Banner / section header band */
+/* Section banner — pale purple pill */
 .banner {
   background: var(--color-purple);
   color: #fff;
-  border-radius: 16px;
-  padding: 10px 20px;
+  border-radius: 14px;
+  padding: 9px 18px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
-}
-
-/* Decorations layer (positioned absolute children) */
-.deco-layer {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
-.deco-layer > * { position: absolute; }
-
-/* Star / asterisk shapes */
-.deco-asterisk {
-  width: 56px;
-  height: 56px;
+  letter-spacing: 0.01em;
 }
 
 /* Header */
 .app-header {
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
+  grid-template-columns: 60px 1fr 60px;
   align-items: center;
   padding: 14px 18px 12px;
-  border-bottom: 1px solid var(--color-line);
   background: #fff;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
+  border-bottom: 1px solid var(--color-line);
 }
 .app-header .brand {
   font-family: var(--font-display);
@@ -225,11 +234,7 @@ p { margin: 0; }
   line-height: 1.0;
   letter-spacing: -0.02em;
 }
-.app-header .brand sup {
-  font-size: 8px;
-  font-weight: 600;
-  vertical-align: super;
-}
+.app-header .brand sup { font-size: 8px; font-weight: 700; vertical-align: super; }
 .app-header .icon-btn {
   background: transparent;
   border: 0;
@@ -242,9 +247,9 @@ p { margin: 0; }
 .app-header .cart-btn {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* Generic flex helpers */
@@ -252,14 +257,13 @@ p { margin: 0; }
 .row-center { display: flex; gap: 12px; align-items: center; justify-content: center; flex-wrap: wrap; }
 .col { display: flex; flex-direction: column; gap: 12px; }
 
-/* Section break */
-.section { position: relative; padding: 28px 0; }
-
 /* Utility */
 .text-center { text-align: center; }
+.text-left   { text-align: left; }
 .text-soft   { color: var(--color-ink-soft); }
-.muted-15    { font-size: 15px; color: var(--color-ink); font-weight: 300; }
-.label-md    { font-size: 14px; color: var(--color-ink); font-weight: 500; }
+.muted-15    { font-size: 15px; color: var(--color-ink); font-weight: 400; line-height: 1.45; }
+.muted-14    { font-size: 14px; color: var(--color-ink); font-weight: 400; line-height: 1.45; }
+.label-md    { font-size: 14px; color: var(--color-ink); font-weight: 600; }
 
 /* Form */
 .field {
@@ -273,7 +277,7 @@ p { margin: 0; }
   font-size: 14px;
   color: var(--color-ink);
   outline: none;
-  min-height: 110px;
+  min-height: 100px;
 }
 .field:focus { background: #e7e7e7; }
 
@@ -281,11 +285,31 @@ p { margin: 0; }
   background: var(--color-primary);
   color: #fff;
   border-radius: var(--radius-pill);
-  padding: 10px 18px;
+  padding: 11px 18px;
   border: 0;
   width: 100%;
   font-family: inherit;
   font-size: 13px;
   outline: none;
+  text-align: center;
 }
 .field-search::placeholder { color: rgba(255,255,255,0.85); }
+
+/* Decoration helpers */
+.deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Rounded photo */
+.photo-rounded {
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: var(--shadow-photo);
+}
+
+/* Page-level flow gap */
+.flow > * + * { margin-top: 18px; }
+.flow-tight > * + * { margin-top: 12px; }
+.flow-loose > * + * { margin-top: 26px; }
