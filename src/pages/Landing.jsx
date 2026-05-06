@@ -4,7 +4,6 @@ import bagHero from '../assets/bag-hero.png';
 import kid1 from '../assets/kid-1.jpg';
 import kid2 from '../assets/kid-2.jpg';
 import sparksGroup from '../assets/sparks-group.png';
-import itemPegs from '../assets/item-pegs.png';
 import './Landing.css';
 
 export default function Landing() {

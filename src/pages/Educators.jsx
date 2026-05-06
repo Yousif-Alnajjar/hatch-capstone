@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Asterisk, Arc, Burst, Dot } from '../components/Decoration.jsx';
-import itemPink from '../assets/item-pink.png';
+import shapablePink from '../assets/shapable-pink.png';
 import './Advice.css';
 
 const MINDSET_CHECKS = [
@@ -96,7 +96,7 @@ export default function Educators() {
 
       <div className="card advice-quote">
         <p className="quote">&ldquo;How did you make that work?&rdquo;</p>
-        <img src={itemPink} alt="" className="quote-photo" />
+        <img src={shapablePink} alt="" className="quote-photo" />
       </div>
 
       <div className="row advice-footer">
