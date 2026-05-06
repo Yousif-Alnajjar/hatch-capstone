@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Asterisk, Burst, HalfMoon, Arc, Dot, Stripe } from '../components/Decoration.jsx';
 import bagHero from '../assets/bag-hero.png';
-import kid1 from '../assets/kid-1.png';
-import kid2 from '../assets/kid-2.png';
+import kid1 from '../assets/kid-1.jpg';
+import kid2 from '../assets/kid-2.jpg';
 import sparksGroup from '../assets/sparks-group.png';
 import './Landing.css';
 

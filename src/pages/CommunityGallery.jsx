@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { fetchApprovedPosts, isConfigured } from '../lib/api.js';
 import { TAGS } from '../lib/tags.js';
 import { Asterisk, HalfMoon } from '../components/Decoration.jsx';
-import kid1 from '../assets/kid-1.png';
-import kid2 from '../assets/kid-2.png';
+import kid1 from '../assets/kid-1.jpg';
+import kid2 from '../assets/kid-2.jpg';
 import './CommunityGallery.css';
 
 const FALLBACK_POSTS = [
