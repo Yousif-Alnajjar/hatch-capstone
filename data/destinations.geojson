@@ -1,0 +1,90 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9516,
+                    40.4536
+                ]
+            },
+            "properties": {
+                "id": "melwood",
+                "name": "343 Melwood Ave",
+                "subtitle": "home",
+                "trip_count": 862,
+                "radius_m": 180
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9436,
+                    40.4433
+                ]
+            },
+            "properties": {
+                "id": "cmu",
+                "name": "Carnegie Mellon",
+                "subtitle": "school",
+                "trip_count": 894,
+                "radius_m": 300
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9950,
+                    40.4310
+                ]
+            },
+            "properties": {
+                "id": "color",
+                "name": "The Color Park",
+                "subtitle": "South Side · read, climb, run",
+                "trip_count": 39,
+                "radius_m": 250
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9413,
+                    40.4375
+                ]
+            },
+            "properties": {
+                "id": "schenley",
+                "name": "Schenley Park",
+                "subtitle": "Schenley Drive, Circuit Road",
+                "trip_count": 217,
+                "radius_m": 500
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9207,
+                    40.4637
+                ]
+            },
+            "properties": {
+                "id": "homedepot",
+                "name": "Home Depot (East Liberty)",
+                "subtitle": "for Booth",
+                "trip_count": 21,
+                "radius_m": 200
+            }
+        }
+    ]
+}

@@ -1,0 +1,209 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9806,
+          40.4455
+        ]
+      },
+      "properties": {
+        "name": "Terrace Hall Hotel",
+        "street": "Wylie Ave, Hill District",
+        "type": "hotel",
+        "years": "1940s\u201350s",
+        "source": "Heinz History Center / Smithsonian"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.982,
+          40.4467
+        ]
+      },
+      "properties": {
+        "name": "Harlem Casino Dance Hall",
+        "street": "Centre Ave",
+        "type": "entertainment",
+        "years": "1940s\u201360s",
+        "source": "Heinz History Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9799,
+          40.4461
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Hotel",
+        "street": "2407 Wylie Ave",
+        "type": "hotel",
+        "years": "1965\u201367",
+        "source": "Smithsonian / NPC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9812,
+          40.4468
+        ]
+      },
+      "properties": {
+        "name": "Agnes Taylor Tourist Home",
+        "street": "2612 Centre Ave",
+        "type": "tourist home",
+        "years": "1953\u201357, 1959\u201362",
+        "source": "Smithsonian / NPC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9793,
+          40.4458
+        ]
+      },
+      "properties": {
+        "name": "Dearing's Restaurant",
+        "street": "2524 Wylie Ave",
+        "type": "restaurant",
+        "years": "1940\u201341, 1947\u201349",
+        "source": "Smithsonian / NPC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9815,
+          40.4465
+        ]
+      },
+      "properties": {
+        "name": "Scotty's Restaurant / Service Station",
+        "street": "2414 Centre Ave",
+        "type": "restaurant / fuel",
+        "years": "1940\u201341, 1947\u201353",
+        "source": "Smithsonian / NPC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.983,
+          40.447
+        ]
+      },
+      "properties": {
+        "name": "Centre Avenue YMCA",
+        "street": "Centre Ave",
+        "type": "tourist lodging",
+        "years": "1940s\u201360s",
+        "source": "Heinz History Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.982,
+          40.4459
+        ]
+      },
+      "properties": {
+        "name": "Bailey Hotel",
+        "street": "Hill District",
+        "type": "hotel",
+        "years": "1940s",
+        "source": "Thelma Lovette / Hillscapes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9815,
+          40.446
+        ]
+      },
+      "properties": {
+        "name": "Potter's Hotel",
+        "street": "Hill District",
+        "type": "hotel",
+        "years": "1940s",
+        "source": "Thelma Lovette / Hillscapes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.98,
+          40.4462
+        ]
+      },
+      "properties": {
+        "name": "Charlotte's Beauty Salon",
+        "street": "Wylie Ave",
+        "type": "beauty parlor",
+        "years": "1940s",
+        "source": "Heinz History Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.979,
+          40.445
+        ]
+      },
+      "properties": {
+        "name": "Samuel Scott's Service Station",
+        "street": "Hill District",
+        "type": "service station",
+        "years": "1940",
+        "source": "Heinz History Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9789,
+          40.4452
+        ]
+      },
+      "properties": {
+        "name": "Samuel Scott's Restaurant",
+        "street": "Hill District",
+        "type": "restaurant",
+        "years": "1946",
+        "source": "Heinz History Center"
+      }
+    }
+  ]
+}
