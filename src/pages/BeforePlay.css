@@ -1,0 +1,59 @@
+.before-play .intro-card {
+  position: relative;
+  padding: 26px 22px 32px;
+  overflow: hidden;
+}
+.before-play .intro-card h1 { font-size: 30px; position: relative; z-index: 2; }
+.before-play .intro-card p { position: relative; z-index: 2; }
+.before-play .intro-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.timer-card {
+  position: relative;
+  background: var(--color-orange);
+  border-radius: 30px;
+  margin-top: 16px;
+  padding: 22px 22px 26px;
+  overflow: hidden;
+  color: #fff;
+}
+.timer-start {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+}
+.timer-photo {
+  position: relative;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-photo img {
+  width: 80%;
+  border-radius: 16px;
+  opacity: 0.55;
+  filter: hue-rotate(-10deg) saturate(1.2);
+}
+.timer-label {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.read-more-card {
+  margin-top: 16px;
+  text-align: center;
+  padding: 22px 22px 28px;
+}
+.read-more-card h2 { font-size: 28px; }

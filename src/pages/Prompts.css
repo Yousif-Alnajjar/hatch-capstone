@@ -1,0 +1,40 @@
+.prompts-page {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 60px);
+}
+.prompts-back {
+  display: inline-flex;
+  margin-bottom: 14px;
+}
+.prompts-banner {
+  position: relative;
+  background: var(--color-purple);
+  border-radius: 22px;
+  padding: 22px 24px 24px;
+  margin: 0 auto;
+  max-width: 320px;
+}
+.prompts-banner h1 { color: #fff; font-size: 36px; }
+
+.prompt-card {
+  margin: 36px 12px 0;
+  padding: 56px 22px 56px;
+  position: relative;
+  overflow: visible;
+}
+.prompt-text {
+  color: var(--color-orange);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.25;
+  text-align: center;
+}
+.prompt-category {
+  margin: 28px 0 22px;
+  font-size: 16px;
+  color: var(--color-ink);
+  font-weight: 400;
+}
+.prompt-generate { margin: 0 auto; min-width: 60%; }

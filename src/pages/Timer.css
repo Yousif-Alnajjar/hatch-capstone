@@ -1,0 +1,45 @@
+.timer-page {
+  background: var(--color-orange);
+  min-height: calc(100vh - 60px);
+  position: relative;
+  overflow: hidden;
+  padding: 20px 22px 60px;
+  color: #fff;
+}
+.timer-top { display: flex; }
+
+.timer-display {
+  position: relative;
+  margin: 28px auto;
+  width: 88%;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-display img {
+  width: 100%;
+  opacity: 0.55;
+  display: block;
+}
+.timer-time {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.focus-text {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 80px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.read-more-inline {
+  margin-top: 32px;
+  background: var(--color-cream);
+}

@@ -1,0 +1,76 @@
+.upload-page {
+  position: relative;
+  overflow: hidden;
+}
+.upload-banner {
+  text-align: center;
+  padding: 22px 22px 22px;
+  margin-bottom: 18px;
+}
+.upload-banner h1 { font-size: 28px; font-weight: 800; }
+
+.upload-bg {
+  background: var(--color-teal);
+  border-radius: 30px;
+  padding: 22px 18px 22px;
+  margin: 0 -8px 18px;
+}
+.upload-box {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.upload-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-ink);
+}
+.upload-empty span { font-size: 13px; }
+
+.upload-bg .field { margin-top: 18px; min-height: 100px; }
+
+.upload-tags {
+  margin-top: 12px;
+  gap: 8px;
+  justify-content: center;
+}
+.upload-tags .tag { padding: 8px 16px; font-size: 12px; }
+
+.upload-name { margin: 18px 4px 0; display: flex; flex-direction: column; gap: 6px; }
+.upload-name-field { min-height: 0; padding: 12px 16px; }
+
+.upload-error {
+  margin-top: 12px;
+  background: #ffecec;
+  color: #b3261e;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+.upload-hint {
+  margin-top: 12px;
+  background: #fff8e0;
+  color: #5a4500;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.upload-actions { margin-top: 22px; display: flex; justify-content: center; }
+.upload-post { min-width: 50%; }

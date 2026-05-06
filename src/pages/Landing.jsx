@@ -1,0 +1,76 @@
+import { Link } from 'react-router-dom';
+import { Asterisk, Burst, HalfMoon, Arc, Dot, Stripe } from '../components/Decoration.jsx';
+import bagHero from '../assets/bag-hero.png';
+import kid1 from '../assets/kid-1.png';
+import kid2 from '../assets/kid-2.png';
+import sparksGroup from '../assets/sparks-group.png';
+import './Landing.css';
+
+export default function Landing() {
+  return (
+    <div className="landing">
+      {/* HERO — Hatch Play Kits */}
+      <section className="hero card">
+        <div className="hero-deco-left">
+          <HalfMoon color="#bee3e0" size={70} rotate={180} />
+          <HalfMoon color="#0dae52" size={42} rotate={180} style={{ position: 'absolute', top: 18, left: 6, opacity: 0.7 }} />
+        </div>
+        <div className="hero-deco-right">
+          <Arc color="#0c8ce9" size={120} />
+          <HalfMoon color="#0dae52" size={70} rotate={-30} style={{ position: 'absolute', top: 28, left: 18 }} />
+        </div>
+        <h1>Hatch Play Kits</h1>
+        <p className="muted-15 text-center hero-sub">A guide for parents and educators, feel free to take a look with your kids or alone.</p>
+
+        <div className="hero-image-wrap">
+          <img src={bagHero} alt="Hatch Play Kit" className="hero-bag" />
+        </div>
+
+        <Link to="/bag/intro" className="btn btn-primary btn-uppercase btn-cta">
+          Learn what&rsquo;s inside!
+        </Link>
+      </section>
+
+      {/* TIMED PLAY */}
+      <section className="section section-timed">
+        <h2>Timed Play</h2>
+        <p className="muted-15 timed-copy">For the adults! Get familiar with the kit yourself, or skip straight to our advice.</p>
+        <Link to="/before-play" className="btn btn-primary btn-uppercase">Start</Link>
+        <img src={sparksGroup} alt="" className="deco-photo deco-sticks" />
+      </section>
+
+      {/* RECOMMENDATIONS */}
+      <section className="section section-recs card">
+        <h2>Recommendations</h2>
+        <div className="row-center" style={{ marginTop: 16 }}>
+          <Link to="/parents" className="btn btn-primary btn-uppercase">Parents</Link>
+          <Link to="/educators" className="btn btn-primary btn-uppercase">Educators</Link>
+        </div>
+      </section>
+
+      {/* FEELING STUCK */}
+      <section className="section section-stuck card">
+        <h2>Feeling Stuck?</h2>
+        <p className="muted-15 stuck-copy">We have put together some prompts to help you get started with your children!</p>
+        <Link to="/prompts" className="btn btn-primary btn-uppercase btn-prompts">Prompts</Link>
+        <Arc color="#f5d51c" size={130} style={{ position: 'absolute', right: -30, bottom: -20, opacity: 0.95 }} />
+        <Asterisk color="#0dae52" size={42} style={{ position: 'absolute', right: 30, bottom: 30 }} />
+      </section>
+
+      {/* COMMUNITY */}
+      <section className="section section-community">
+        <h2 className="community-title">Share photos or<br />browse from<br />the community</h2>
+        <div className="community-photos">
+          <img src={kid2} alt="" className="community-photo c-photo-1" />
+          <img src={kid1} alt="" className="community-photo c-photo-2" />
+        </div>
+        <div className="community-cta">
+          <Link to="/gallery" className="btn btn-primary btn-lg btn-uppercase">Browse Gallery</Link>
+          <Link to="/gallery/upload" className="btn btn-outline btn-sm" style={{ marginTop: 8 }}>Add a photo</Link>
+        </div>
+        <Burst color="#ffb1a8" size={70} style={{ position: 'absolute', top: 110, left: 6, transform: 'rotate(20deg)' }} />
+        <Asterisk color="#0dae52" size={48} style={{ position: 'absolute', top: 0, left: 80 }} />
+      </section>
+    </div>
+  );
+}

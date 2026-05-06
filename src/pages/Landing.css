@@ -1,0 +1,92 @@
+.landing { padding: 12px 18px 40px; }
+
+.hero {
+  margin-top: 8px;
+  padding: 28px 22px 28px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+}
+.hero h1 { font-size: 32px; }
+.hero-sub { margin-top: 10px; }
+.hero-image-wrap {
+  margin: 16px -8px 22px;
+  position: relative;
+  filter: drop-shadow(0 0 22px rgba(245, 213, 28, 0.7));
+}
+.hero-bag { width: 92%; margin: 0 auto; }
+.btn-cta { width: 78%; margin: 0 auto; }
+
+.hero-deco-left  { position: absolute; top: 8px;  left: -12px; }
+.hero-deco-right { position: absolute; top: 70px; right: -50px; opacity: 0.9; }
+
+/* Section: Timed Play */
+.section-timed {
+  position: relative;
+  padding: 30px 4px 36px;
+}
+.section-timed h2 { font-size: 30px; }
+.timed-copy { margin: 12px 0 18px; max-width: 380px; }
+.section-timed .deco-photo {
+  position: absolute;
+  width: 220px;
+  right: -40px;
+  bottom: -40px;
+  transform: rotate(15deg);
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+/* Recommendations */
+.section-recs {
+  text-align: center;
+  padding: 22px 22px 26px;
+}
+
+/* Feeling Stuck */
+.section-stuck {
+  padding: 26px 22px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.section-stuck h2 { font-size: 30px; }
+.stuck-copy { margin: 10px 0 18px; }
+.btn-prompts { width: 60%; }
+
+/* Community */
+.section-community {
+  padding-top: 36px;
+  position: relative;
+}
+.community-title { font-size: 28px; }
+.community-photos {
+  position: relative;
+  margin: 22px 0 20px;
+  height: 240px;
+}
+.community-photo {
+  position: absolute;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border: 6px solid #fff;
+}
+.c-photo-1 {
+  width: 60%;
+  height: 200px;
+  right: -8px;
+  top: 0;
+}
+.c-photo-2 {
+  width: 55%;
+  height: 160px;
+  left: -8px;
+  top: 70px;
+}
+.community-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 8px;
+}
